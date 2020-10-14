@@ -8,6 +8,13 @@
     .cookie-notice {
         @import 'switch';
 
+        border-radius: 10px !important;
+
+        .cm-klaro {
+            border-radius: 10px !important;
+
+        }
+
         font-size: 14px;
 
         .slider {
@@ -28,6 +35,52 @@
             // font-family: inherit;
             @include var(color, 'font-color-dark');
         }
+
+        // Custom h3 styling
+        h3 {
+            font-size: 20px;
+            font-weight: bold !important; 
+            line-height: 22px;
+            ;
+
+        }
+        .Notice-list-item {
+            margin-left: 15px !important;
+            list-style-position: inside !important;
+            list-style: disc !important;
+            display: list-item !important;
+
+        }
+        .cm-btn {
+            font-weight: bold !important; 
+            padding-top: 8px !important;
+            padding-bottom: 8px !important;
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+            border-radius: 30px !important;
+            min-width: 140px !important;
+            margin-bottom: 10px;
+            @media (max-width: $cm-mobile) {
+                width: 100%;
+
+            }
+
+
+        }
+        
+        .cm-btn-accept {
+            background-color: rgb(180, 180, 180) !important;
+        
+        } 
+            
+
+        .cm-klar {
+            border-radius: 10px !important;
+
+        }
+    
+
+
 
         p,
         h1,
@@ -135,6 +188,10 @@
                     display: flex;
                     flex-flow: row;
                     justify-content: space-between;
+                    @media (max-width: $cm-mobile) {
+                        flex-flow: column;
+                        width: 100%;
+                    }
                 }
 
                 .cm-powered-by {
@@ -263,6 +320,11 @@
         @media (max-width: ($cm-desktop - 1)) {
             border-style: none;
             border-radius: 0;
+            margin: 10px;
+            width: auto;
+            box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 5px 5px 10px 0 rgba(0, 0, 0, 0.19);
+            
+            
         }
 
         &.cn-embedded {
@@ -284,8 +346,7 @@
             margin-right: 0;
             bottom: 0;
 
-            padding: 1em;
-            padding-top: 0;
+            padding: 35px; 
 
             p {
                 margin-bottom: 0.5em;
@@ -312,7 +373,7 @@
                     margin-top: 0.5em;
 
                     @media (max-width: $cm-mobile) {
-                        width: calc(50% - #{$btn-margin-right});
+                        width: 100%;
                     }
                 }
             }
@@ -320,7 +381,7 @@
             .cn-ok {
                 // we add a margin that cancels out unless the items are wrapped
                 // in which case it will add some spacing between them
-                margin-top: -0.5em;
+                margin-top: 30px;
                 display: flex;
                 flex-flow: row;
                 flex-wrap: wrap;

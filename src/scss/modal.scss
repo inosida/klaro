@@ -2,13 +2,13 @@
     z-index: 1001;
     box-shadow: $cm-box-shadow-dark-md;
 
-    width: 100%;
-    max-height: 98%;
+    // width: 100%;
+    max-height: 93%;
 
     top: 50%;
     transform: translateY(-50%);
-
-    position: fixed;
+    margin: 10px;
+    position: relative;
     overflow: auto;
     background: $cm-bg-dark;
     color: $cm-font-color-dark;

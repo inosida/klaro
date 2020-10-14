@@ -193,14 +193,15 @@ export default class ConsentNotice extends React.Component {
                 }`}
             >
                 <div className="cn-body">
-                    <Text
-                        config={config}
-                        text={t(['consentNotice', 'description'], {
-                            purposes: <strong key="strong">{purposesText}</strong>,
-                            privacyPolicy: ppLink,
-                            learnMoreLink: learnMoreLink(),
-                        })}
-                    />
+                <h3 id="onetrust-policy-title">Du bestämmer vilka cookies som får användas.</h3>
+                <p>IKEA och våra digitala samarbetspartners använder cookies på den här sidan. Vissa behövs för att sidan ska fungera korrekt. Följande cookies är valbara för dig: </p>
+                <ul className="Notice-list">
+                    <li className="Notice-list-item"> Cookies för att analysera hur vår webbplats används</li>
+                    <li className="Notice-list-item">  Cookies som möjliggör en personaliserad upplevelse av vår webbplats</li>
+                    <li className="Notice-list-item">  Cookies för annonsering och sociala medier</li>
+                
+                </ul>
+                
                     {testing && <p>{t(['consentNotice', 'testing'])}</p>}
                     {changesText}
                     <div className="cn-ok">

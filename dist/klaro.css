@@ -49,12 +49,14 @@ We declare all variables here as default so that they are easy to override...
 .klaro .cookie-modal .cm-list-input:checked + .cm-list-label .slider,
 .klaro .cookie-notice .cm-list-input:checked + .cm-list-label .slider {
   background-color: #1a936f;
+  background-color: var(--green1, #1a936f);
 }
 
 .klaro .cookie-modal .cm-list-input.half-checked:checked + .cm-list-label .slider,
 .klaro .cookie-notice .cm-list-input.half-checked:checked + .cm-list-label .slider {
-  opacity: 0.6;
   background-color: #1a936f;
+  background-color: var(--green1, #1a936f);
+  opacity: 0.6;
 }
 
 .klaro .cookie-modal .cm-list-input.half-checked:checked + .cm-list-label .slider::before,
@@ -65,8 +67,9 @@ We declare all variables here as default so that they are easy to override...
 
 .klaro .cookie-modal .cm-list-input.only-required + .cm-list-label .slider,
 .klaro .cookie-notice .cm-list-input.only-required + .cm-list-label .slider {
-  opacity: 0.8;
   background-color: #24cc9a;
+  background-color: var(--green2, #24cc9a);
+  opacity: 0.8;
 }
 
 .klaro .cookie-modal .cm-list-input.only-required + .cm-list-label .slider::before,
@@ -77,8 +80,9 @@ We declare all variables here as default so that they are easy to override...
 
 .klaro .cookie-modal .cm-list-input.required:checked + .cm-list-label .slider,
 .klaro .cookie-notice .cm-list-input.required:checked + .cm-list-label .slider {
-  opacity: 0.8;
   background-color: #24cc9a;
+  background-color: var(--green2, #24cc9a);
+  opacity: 0.8;
   cursor: not-allowed;
 }
 
@@ -160,6 +164,8 @@ We declare all variables here as default so that they are easy to override...
 
 .klaro .cookie-modal .cm-list-label input:focus + .slider,
 .klaro .cookie-notice .cm-list-label input:focus + .slider {
+  box-shadow-color: #48dfb2;
+  box-shadow-color: var(--green3, #48dfb2);
   box-shadow: 0 0 1px #48dfb2;
 }
 
@@ -188,6 +194,7 @@ We declare all variables here as default so that they are easy to override...
 .klaro .cookie-modal a,
 .klaro .cookie-notice a {
   color: #1a936f;
+  color: var(--green1, #1a936f);
   text-decoration: none;
 }
 
@@ -204,6 +211,7 @@ We declare all variables here as default so that they are easy to override...
 .klaro .cookie-notice ul,
 .klaro .cookie-notice li {
   color: #eee;
+  color: var(--font-color-dark, #eee);
 }
 
 .klaro .cookie-modal p,
@@ -231,8 +239,9 @@ We declare all variables here as default so that they are easy to override...
 
 .klaro .cookie-modal .cm-btn,
 .klaro .cookie-notice .cm-btn {
-  background: #555;
   color: #eee;
+  color: var(--font-color-dark, #eee);
+  background: #555;
   border-radius: 6px;
   padding: 6px 10px;
   margin-right: 0.5em;
@@ -255,11 +264,13 @@ We declare all variables here as default so that they are easy to override...
 .klaro .cookie-modal .cm-btn.cm-btn-success,
 .klaro .cookie-notice .cm-btn.cm-btn-success {
   background: #1a936f;
+  background: var(--green1, #1a936f);
 }
 
 .klaro .cookie-modal .cm-btn.cm-btn-info,
 .klaro .cookie-notice .cm-btn.cm-btn-info {
   background: #2581c4;
+  background: var(--blue1, #2581c4);
 }
 
 .klaro .cookie-modal {
@@ -385,32 +396,32 @@ We declare all variables here as default so that they are easy to override...
   width: auto;
 }
 
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services,
 .klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes {
   padding: 0;
   margin: 0;
 }
 
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-purpose .cm-apps .cm-caret,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-purpose .cm-apps .cm-caret {
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-purpose .cm-services .cm-caret,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-purpose .cm-services .cm-caret {
   color: #888;
 }
 
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-purpose .cm-apps .cm-content,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-purpose .cm-apps .cm-content {
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-purpose .cm-services .cm-content,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-purpose .cm-services .cm-content {
   margin-left: -40px;
   display: none;
 }
 
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-purpose .cm-apps .cm-content.expanded,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-purpose .cm-apps .cm-content.expanded {
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-purpose .cm-services .cm-content.expanded,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-purpose .cm-services .cm-content.expanded {
   margin-top: 10px;
   display: block;
 }
 
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-app,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-purpose,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-app,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-service,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-purpose,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-service,
 .klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-purpose {
   position: relative;
   line-height: 20px;
@@ -419,49 +430,49 @@ We declare all variables here as default so that they are easy to override...
   min-height: 40px;
 }
 
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-app:first-child,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-purpose:first-child,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-app:first-child,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-service:first-child,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-purpose:first-child,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-service:first-child,
 .klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-purpose:first-child {
   margin-top: 0;
 }
 
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-app p,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-purpose p,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-app p,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-service p,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-purpose p,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-service p,
 .klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-purpose p {
   margin-top: 0;
 }
 
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-app p.purposes,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-purpose p.purposes,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-app p.purposes,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-service p.purposes,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-purpose p.purposes,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-service p.purposes,
 .klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-purpose p.purposes {
   font-size: 0.8em;
   color: #999;
 }
 
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-app.cm-toggle-all,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-purpose.cm-toggle-all,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-app.cm-toggle-all,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-service.cm-toggle-all,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-purpose.cm-toggle-all,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-service.cm-toggle-all,
 .klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-purpose.cm-toggle-all {
   border-top: 1px solid #555;
   padding-top: 1em;
 }
 
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-app span.cm-list-title,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-purpose span.cm-list-title,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-app span.cm-list-title,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-service span.cm-list-title,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-purpose span.cm-list-title,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-service span.cm-list-title,
 .klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-purpose span.cm-list-title {
   font-weight: 600;
 }
 
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-app span.cm-opt-out,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-app span.cm-required,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-purpose span.cm-opt-out,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-apps li.cm-purpose span.cm-required,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-app span.cm-opt-out,
-.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-app span.cm-required,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-service span.cm-opt-out,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-service span.cm-required,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-purpose span.cm-opt-out,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-services li.cm-purpose span.cm-required,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-service span.cm-opt-out,
+.klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-service span.cm-required,
 .klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-purpose span.cm-opt-out,
 .klaro .cookie-modal .cm-modal .cm-body ul.cm-purposes li.cm-purpose span.cm-required {
   padding-left: 0.2em;

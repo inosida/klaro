@@ -11,23 +11,26 @@ $cm-border-radius: 4px !default;
 $cm-border-dark: 1px solid #555 !default;
 
 /* Colors */
-$cm-font-color-dark: #eee !default;
+.cm-btn { 
+    color: white !important ;
+}
+$cm-font-color-dark: #111 !default;
 $cm-tab-color: #2581c4 !default;
 $cm-font-color-dark-deemphasized: #999 !default;
-$cm-bg-dark: #333 !default;
+$cm-bg-dark: #FFFFFF !default;
 $cm-gray-medium: #aaa !default;
 $cm-gray-light: #eee !default;
 $cm-white: #fff !default;
 
-$cm-blue1: #2581c4 !default;
+$cm-blue1: #000639 !default;
 $cm-blue2: scale-color($cm-blue1, $lightness: 20%) !default;
 $cm-blue3: scale-color($cm-blue2, $lightness: 20%) !default;
 $cm-blue4: scale-color($cm-blue3, $lightness: 20%) !default;
 
-$cm-green1: #1a936f !default;
-$cm-green2: scale-color($cm-green1, $lightness: 20%) !default;
-$cm-green3: scale-color($cm-green2, $lightness: 20%) !default;
-$cm-green4: scale-color($cm-green3, $lightness: 20%) !default;
+$cm-green1: #000639 !default;
+$cm-green2: scale-color($cm-green1, $lightness: 0%) !default;
+$cm-green3: scale-color($cm-green2, $lightness: 0%) !default;
+$cm-green4: scale-color($cm-green3, $lightness: 0%) !default;
 
 $cm-red1: #da2c43 !default;
 $cm-red2: scale-color($cm-red1, $lightness: 20%) !default;
